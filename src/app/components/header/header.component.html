@@ -25,29 +25,26 @@
 </style>
 <header id="header">
   <div>
-    <section>
-      <div>
-        <img src="/assets/document-svgrepo-com.svg" alt="Documento" class="w-6 h-6" />
-      </div>
-      <div>
-        <h2>Mi Portfolio</h2>
-      </div>
+    <section class="flex flex-wrap items-center justify-center gap-y-2">
+      <img src="/assets/document-svgrepo-com.svg" alt="Documento" class="w-6 h-6" />
+
+      <h2 class="text-4xl">Mi Portfolio</h2>
     </section>
 
     <section>
       <nav>
-        <ul>
-          <li><a href="#">Formación Académica</a></li>
-          <li><a href="#">Experiencia</a></li>
-          <li><a href="#">Habilidades Técnicas</a></li>
-          <li><a href="#">Contacto</a></li>
+        <ul class="flex flex-wrap items-center justify-center gap-x-4">
+          <li class="border-2 rounded-md px-2"><a href="#">Formación Académica</a></li>
+          <li class="border rounded-md px-2"><a href="#">Experiencia</a></li>
+          <li class="border rounded-md px-2"><a href="#">Habilidades Técnicas</a></li>
+          <li class="border rounded-md px-2"><a href="#">Contacto</a></li>
         </ul>
       </nav>
     </section>
 
     <section>
-      <div>
-        <img src="/assets/download-svgrepo-com.svg" alt="Download">
+      <div class="flex flex-nowrap items-center justify-center border-2 rounded-md p-2 gap-2 bg-green-500 hover:bg-green-600 transition-colors">
+        <img src="/assets/download-svgrepo-com.svg" alt="Download" />
         <button>Descargar PDF</button>
       </div>
     </section>
