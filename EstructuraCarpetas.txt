@@ -1,0 +1,38 @@
+src/
+ └─ app/
+     ├─ components/
+     │   ├─ header/
+     │   │   ├─ header.component.ts
+     │   │   ├─ header.component.html
+     │   │   └─ header.component.scss
+     │   ├─ profile/
+     │   │   ├─ profile.component.ts
+     │   │   ├─ profile.component.html
+     │   │   └─ profile.component.scss
+     │   ├─ experience/
+     │   │   ├─ experience.component.ts
+     │   │   ├─ experience.component.html
+     │   │   └─ experience.component.scss
+     │   ├─ education/
+     │   │   ├─ education.component.ts
+     │   │   ├─ education.component.html
+     │   │   └─ education.component.scss
+     │   ├─ skills/
+     │   │   ├─ skills.component.ts
+     │   │   ├─ skills.component.html
+     │   │   └─ skills.component.scss
+     │   ├─ certificates/
+     │   │   ├─ certificates.component.ts
+     │   │   ├─ certificates.component.html
+     │   │   └─ certificates.component.scss
+     │   ├─ languages/
+     │   │   ├─ languages.component.ts
+     │   │   ├─ languages.component.html
+     │   │   └─ languages.component.scss
+     │   └─ footer/
+     │       ├─ footer.component.ts
+     │       ├─ footer.component.html
+     │       └─ footer.component.scss
+     ├─ app.component.ts
+     ├─ app.component.html
+     └─ app.component.scss
