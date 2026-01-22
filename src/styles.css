@@ -1,16 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   /* === CONTENEDORES === */
+  /* === CONTENEDOR PADRE (Ocupa todo el ancho y centra al hijo) === */
   .cv-section {
-    @apply mb-12 flex flex-col items-center justify-center py-12 px-4;
+    @apply w-full flex flex-col items-center justify-center py-12 px-4 mb-12;
   }
 
+  /* === CONTENEDOR HIJO (Limita el ancho del contenido) === */
   .cv-content-width {
-    @apply w-full max-w-4xl; /* Ancho máximo estándar para el contenido */
+    @apply w-full max-w-4xl; 
   }
 
   /* === TIPOGRAFÍA === */
@@ -41,5 +42,26 @@
 
   .cv-col-info {
     @apply flex flex-col flex-1;
+  }
+
+  /* === LAYOUT GRID (Para Skills + Stacks) === */
+  /* Combina con cv-content-width para mantener el ancho, pero añade grid */
+  .cv-grid-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 w-full;
+  }
+
+  /* === COMPONENTE STACK (Badges) === */
+  .cv-stack-container {
+    @apply flex flex-wrap gap-3 w-full;
+  }
+
+  .cv-stack-badge {
+    @apply px-4 py-2 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium border border-gray-200 shadow-sm transition-all duration-200;
+    @apply hover:bg-white hover:shadow-md hover:border-gray-300 hover:text-green-700 cursor-default;
+  }
+
+  /* === COMPONENTES TERCEROS (Material) === */
+  mat-progress-bar {
+    @apply h-5 rounded-full overflow-hidden;
   }
 }

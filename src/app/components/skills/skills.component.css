@@ -1,0 +1,12 @@
+.cv-skill-container {
+    @apply flex flex-col gap-6 w-full;
+  }
+
+  .cv-skill-header {
+    @apply flex justify-between items-end mb-2;
+  }
+  
+  /* Reutilizamos estilos de texto base pero en bold */
+  .cv-skill-label {
+    @apply text-sm font-bold text-gray-700 uppercase tracking-wider;
+  }

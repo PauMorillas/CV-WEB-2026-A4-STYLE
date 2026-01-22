@@ -1,0 +1,21 @@
+.cv-profile-avatar {
+    @apply w-40 h-40 object-cover rounded-2xl shadow-lg border-4 transition-all duration-300 mb-6;
+    @apply grayscale hover:grayscale-0 hover:scale-125;
+  }
+
+  .cv-profile-name {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 uppercase tracking-tight mb-3 text-center;
+  }
+
+  .cv-profile-role {
+    /* Reutiliza lógica de verde/uppercase pero más grande */
+    @apply text-green-700 font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-8 text-center;
+  }
+
+  .cv-profile-contact-box {
+    @apply flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-gray-500 text-sm font-light;
+  }
+
+  .cv-link {
+    @apply hover:text-black transition-colors cursor-pointer;
+  }
