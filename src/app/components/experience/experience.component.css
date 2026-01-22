@@ -1,0 +1,11 @@
+.company-name {
+    @apply cv-subtitle-green; /* Herencia de global */
+}
+
+.task-list {
+    @apply space-y-3 mt-4;
+}
+
+.task-list li {
+    @apply cv-text-body list-disc list-outside ml-4;
+}

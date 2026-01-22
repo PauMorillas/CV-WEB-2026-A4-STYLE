@@ -1,0 +1,43 @@
+.header-container {
+    @apply bg-white shadow-sm w-full py-4 px-6 mb-8;
+}
+
+.header-content {
+    /* Reutilizamos el ancho máximo global si quieres, o definimos uno propio */
+    @apply flex flex-col md:flex-row items-center justify-between gap-6 max-w-6xl mx-auto;
+}
+
+/* === BRAND === */
+.brand-group {
+    @apply flex items-center gap-3;
+}
+
+.brand-icon {
+    @apply w-8 h-8;
+}
+
+.brand-title {
+    @apply text-2xl font-bold text-gray-800;
+}
+
+/* === NAVIGATION === */
+.nav-list {
+    @apply flex flex-wrap justify-center gap-4;
+}
+
+.nav-link {
+    @apply px-3 py-1 text-sm font-medium text-gray-600 hover:text-green-700 transition-colors border border-transparent hover:border-green-200 rounded-md;
+}
+
+/* === ACTION BUTTON === */
+.download-wrapper {
+    @apply flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700 transition-all cursor-pointer;
+}
+
+.icon-sm {
+    @apply w-5 h-5 invert; /* Invert hace el icono blanco si es negro */
+}
+
+.btn-text {
+    @apply font-semibold text-sm;
+}

@@ -5,8 +5,12 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
+  standalone: true,
 })
 
 export class HeaderComponent {
-    
+  // Simplemente ejecutamos la función nativa del navegador
+  public downloadAsPdf(): void {
+    window.print();
+  }
 }

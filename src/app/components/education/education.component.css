@@ -1,0 +1,64 @@
+/* === MAIN STRUCTURE === */
+#education-section {
+    @apply mb-12;
+    @apply flex flex-col items-center justify-center py-12 px-4
+}
+
+.section-title {
+    @apply text-xl font-bold tracking-widest text-gray-900 uppercase mb-8 border-b pb-4;
+}
+
+.education-list {
+    @apply flex flex-col gap-y-8;
+}
+
+/* === THE ENTRY (THE ROW) === */
+.education-entry {
+    /* CORE LAYOUT LOGIC:
+       Mobile: flex-col (Date top, Info bottom)
+       Desktop (md): flex-row (Date left, Info right)
+    */
+    @apply flex flex-col md:flex-row gap-x-8;
+}
+
+/* === DATE COLUMN (LEFT) === */
+.date-column {
+    /* Min-width prevents the date from wrapping ugly */
+    @apply min-w-[160px] mt-1;
+}
+
+.period-label {
+    @apply text-gray-400 text-sm font-medium;
+}
+
+/* === INFO COLUMN (RIGHT) === */
+.info-column {
+    @apply flex flex-col max-w-2xl;
+}
+
+.degree-title {
+    @apply text-lg font-bold text-gray-900;
+}
+
+.institution-name {
+    /* The green text style from the reference */
+    @apply text-green-700 font-medium text-sm uppercase tracking-wider mb-2;
+}
+
+.description-list {
+    @apply list-disc list-inside text-gray-600 text-sm space-y-1 mt-2;
+}
+
+.description-text {
+    @apply text-gray-600 text-sm mb-2 leading-relaxed;
+}
+
+/* === TECH BADGES === */
+.tech-stack {
+    @apply flex flex-wrap gap-2 mt-2;
+}
+
+.tech-stack span {
+    /* Pill shape style */
+    @apply bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-semibold;
+}

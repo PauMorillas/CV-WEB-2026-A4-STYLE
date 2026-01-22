@@ -1,51 +1,23 @@
-<!-- Navegación y Logo -->
-<style>
-  #header {
-    color: black;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #header div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  #header h2 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
-  #header img {
-    width: 25px;
-  }
-</style>
-<header id="header">
-  <div>
-    <section class="flex flex-wrap items-center justify-center gap-y-2">
-      <img src="/assets/document-svgrepo-com.svg" alt="Documento" class="w-6 h-6" />
-
-      <h2 class="text-4xl">Mi Portfolio</h2>
+<header class="header-container">
+  <div class="header-content">
+    <section class="brand-group">
+      <img src="/assets/document-svgrepo-com.svg" alt="Portfolio Logo" class="brand-icon" />
+      <h1 class="brand-title">Mi Portfolio</h1>
     </section>
 
-    <section>
-      <nav>
-        <ul class="flex flex-wrap items-center justify-center gap-x-4">
-          <li class="border-2 rounded-md px-2"><a href="#">Formación Académica</a></li>
-          <li class="border rounded-md px-2"><a href="#">Experiencia</a></li>
-          <li class="border rounded-md px-2"><a href="#">Habilidades Técnicas</a></li>
-          <li class="border rounded-md px-2"><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </section>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="#education-section" class="nav-link">Formación Académica</a></li>
+        <li><a href="#experience-section" class="nav-link">Experiencia</a></li>
+        <li><a href="#skills-section" class="nav-link">Habilidades</a></li>
+        <li><a href="#contact-section" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <section>
-      <div class="flex flex-nowrap items-center justify-center border-2 rounded-md p-2 gap-2 bg-green-500 hover:bg-green-600 transition-colors">
-        <img src="/assets/download-svgrepo-com.svg" alt="Download" />
-        <button>Descargar PDF</button>
+    <section class="action-group" (click)="downloadAsPdf()">
+      <div class="download-wrapper">
+        <img src="/assets/download-svgrepo-com.svg" alt="" class="icon-sm" />
+        <button class="btn-text">Descargar PDF</button>
       </div>
     </section>
   </div>
