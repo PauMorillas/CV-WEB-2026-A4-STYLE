@@ -59,9 +59,4 @@
     @apply px-4 py-2 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium border border-gray-200 shadow-sm transition-all duration-200;
     @apply hover:bg-white hover:shadow-md hover:border-gray-300 hover:text-green-700 cursor-default;
   }
-
-  /* === COMPONENTES TERCEROS (Material) === */
-  mat-progress-bar {
-    @apply h-5 rounded-full overflow-hidden;
-  }
 }
