@@ -1,5 +1,7 @@
+@tailwind base;
+
 .company-name {
-    @apply cv-subtitle-green; /* Herencia de global */
+    @apply text-green-700 font-medium text-sm uppercase tracking-wider mb-2;
 }
 
 .task-list {
@@ -7,5 +9,5 @@
 }
 
 .task-list li {
-    @apply cv-text-body list-disc list-outside ml-4;
+   @apply text-gray-600 text-sm leading-relaxed list-disc list-outside ml-4;
 }
