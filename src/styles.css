@@ -16,7 +16,7 @@
 
   /* === TIPOGRAFÍA === */
   .cv-section-title {
-    @apply text-xl font-bold tracking-widest text-gray-900 uppercase mb-8 border-b pb-4 w-full text-center md:text-left;
+    @apply text-xl font-bold tracking-widest text-gray-900 uppercase mb-8 border-b pb-4 w-full text-center md:text-left !important;
   }
 
   .cv-subtitle-green {

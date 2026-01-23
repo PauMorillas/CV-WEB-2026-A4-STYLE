@@ -1,7 +1,7 @@
 @tailwind base;
 .cv-profile-avatar {
     @apply w-40 h-40 object-cover rounded-2xl shadow-lg border-4 transition-all duration-300 mb-6;
-    @apply grayscale hover:grayscale-0 hover:scale-125;
+    @apply hover:scale-125;
   }
 
   .cv-profile-name {
