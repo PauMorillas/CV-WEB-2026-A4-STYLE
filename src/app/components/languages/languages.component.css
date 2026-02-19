@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === CONTENIDO PRINCIPAL === */
+#lang-section {
+  @apply py-5 px-2 mb-0 !important;
+}
+
+.lang-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 w-full;
+}
+
+.lang-card {
+  @apply bg-gray-50 p-4 rounded-lg border-l-4 transition-all duration-300;
+  @apply hover:shadow-md hover:bg-white;
+}
+
+/* === CABECERA DE LA TARJETA (Flex) === */
+.lang-header {
+  @apply flex justify-between items-start;
+}
+
+/* === TEXTOS === */
+.lang-title {
+  @apply font-bold text-gray-900 text-lg;
+}
+
+.lang-level {
+  @apply text-sm font-medium mt-1;
+}
+
+.lang-detail {
+  @apply text-xs text-gray-500 mt-3 border-t border-gray-200 pt-2 italic;
+}
+
+/* === ICONO === */
+.lang-icon {
+  @apply text-gray-300 text-2xl select-none;
+}

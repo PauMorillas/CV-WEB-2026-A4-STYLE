@@ -9,5 +9,5 @@
 }
 
 .task-list li {
-   @apply text-gray-600 text-sm leading-relaxed list-disc list-outside ml-4;
+   @apply text-gray-800 text-sm leading-relaxed list-disc list-outside ml-4;
 }

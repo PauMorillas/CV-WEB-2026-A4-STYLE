@@ -47,11 +47,12 @@
 }
 
 .description-list {
-  @apply list-disc list-inside text-gray-600 text-sm space-y-1 mt-2;
+  @apply list-disc list-inside text-sm space-y-1 mt-2;
+  list-style: none
 }
 
 .description-text {
-  @apply text-gray-600 text-sm mb-2 leading-relaxed;
+  @apply text-gray-800 text-sm mb-2 leading-relaxed;
 }
 
 /* === TECH BADGES === */

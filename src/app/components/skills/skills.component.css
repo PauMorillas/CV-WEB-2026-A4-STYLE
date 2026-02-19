@@ -5,10 +5,16 @@
   }
 
   .cv-skill-header {
-    @apply flex justify-between items-end mb-2;
+    @apply flex mb-2;
+    flex-direction: column;
   }
   
   /* Reutilizamos estilos de texto base pero en bold */
   .cv-skill-label {
     @apply text-sm font-bold text-gray-700 uppercase tracking-wider;
+  }
+
+  .separator {
+    @apply mb-2;
+    border: #026e00 solid .0645rem;
   }

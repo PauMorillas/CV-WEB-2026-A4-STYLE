@@ -6,10 +6,11 @@ import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { StackComponent } from './components/stack/stack.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ProfileComponent, EducationComponent, ExperienceComponent, SkillsComponent, StackComponent],
+  imports: [RouterOutlet, HeaderComponent, ProfileComponent, EducationComponent, ExperienceComponent, SkillsComponent, StackComponent, LanguagesComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
