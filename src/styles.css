@@ -8,10 +8,10 @@
   .cv-section {
     @apply w-full flex flex-col items-center justify-center py-12 px-4 mb-12;
   }
-
+  
   /* === CONTENEDOR HIJO (Limita el ancho del contenido) === */
   .cv-content-width {
-    @apply w-full max-w-4xl; 
+    @apply w-full max-w-4xl;
   }
 
   /* === TIPOGRAFÍA === */
@@ -24,7 +24,7 @@
   }
 
   .cv-text-body {
-    @apply text-gray-600 text-sm leading-relaxed;
+    @apply text-gray-800 text-base leading-relaxed;
   }
 
   .cv-date-label {
