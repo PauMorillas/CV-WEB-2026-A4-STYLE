@@ -1,0 +1,53 @@
+<section class="cv-section animate-fade-in" id="proyectos">
+  <div class="cv-content-width">
+    <div class="section-header">
+      <h2 class="cv-section-title">Proyectos Destacados</h2>
+      <p class="cv-subtitle-green">
+        Una selección de mis desarrollos recientes, desde arquitecturas empresariales hasta
+        interfaces interactivas.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      @for (project of projects; track project.title) {
+        <article class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-desc">{{ project.description }}</p>
+
+            <div class="tech-container">
+              @for (tech of project.technologies; track tech) {
+                <span class="tech-badge">{{ tech }}</span>
+              }
+            </div>
+          </div>
+
+          <div class="project-links">
+            @if (project.githubUrl) {
+              <a [href]="project.githubUrl" target="_blank" class="link-btn">
+                <i class="bx bxl-github text-lg"></i> Código
+              </a>
+            }
+
+            @if (project.liveUrl) {
+              <a [href]="project.liveUrl" target="_blank" class="link-btn link-btn-primary">
+                <i class="bx bx-link-external text-lg"></i> Demo
+              </a>
+            }
+
+            @if (project.privateDemo) {
+              <a
+                href="mailto:morillashuertapau@gmail.com?subject=Solicitud de Demo Privada: {{
+                  project.title
+                }}"
+                class="link-btn-private"
+              >
+                <i class="bx bx-lock-alt text-lg"></i> Demo bajo petición
+              </a>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

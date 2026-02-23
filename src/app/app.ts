@@ -8,10 +8,11 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { StackComponent } from './components/stack/stack.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ProfileComponent, EducationComponent, ExperienceComponent, SkillsComponent, StackComponent, LanguagesComponent, AboutComponent],
+  imports: [RouterOutlet, HeaderComponent, ProfileComponent, EducationComponent, ExperienceComponent, SkillsComponent, StackComponent, LanguagesComponent, AboutComponent, ProjectsComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

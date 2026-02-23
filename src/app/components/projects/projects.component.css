@@ -1,0 +1,78 @@
+/* Grid de proyectos */
+.projects-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+/* Tarjeta de cada proyecto */
+.project-card {
+  @apply flex flex-col rounded-2xl shadow-sm border transition-all duration-300 hover:shadow-md hover:-translate-y-1 overflow-hidden;
+  background-color: var(--mat-sys-surface);
+  border-color: rgba(2, 110, 0, 0.2);
+}
+
+.project-content {
+  @apply p-6 flex flex-col flex-grow;
+}
+
+.project-title {
+  @apply text-xl font-bold mb-3;
+  color: var(--mat-sys-on-surface);
+}
+
+.project-desc {
+  @apply text-sm leading-relaxed mb-6 flex-grow;
+  color: var(--mat-sys-on-surface);
+  opacity: 0.8;
+}
+
+/* Badges de Tecnologías */
+.tech-container {
+  @apply flex flex-wrap gap-2 mt-auto;
+}
+
+.tech-badge {
+  @apply text-xs font-semibold px-3 py-1 rounded-full;
+  background-color: rgba(2, 110, 0, 0.08);
+  color: #026e00;
+  border: 1px solid rgba(2, 110, 0, 0.2);
+}
+
+/* Enlaces (Botones) */
+.project-links {
+  @apply px-6 py-4 flex gap-6 border-t mt-auto;
+  border-color: rgba(2, 110, 0, 0.1);
+  background-color: rgba(2, 110, 0, 0.02);
+}
+
+.link-btn {
+  @apply inline-flex items-center gap-1.5 text-sm font-semibold transition-all duration-200;
+  color: var(--mat-sys-on-surface);
+  opacity: 0.7;
+}
+
+.link-btn:hover {
+  color: #026e00;
+  opacity: 1;
+}
+
+/* Enlace principal (Demo) */
+.link-btn-primary {
+  color: #026e00;
+  opacity: 1;
+}
+
+.link-btn-primary:hover {
+  @apply underline underline-offset-4;
+}
+
+/* Botón de Demo Privada (correo) */
+.link-btn-private {
+  @apply inline-flex items-center gap-1.5 text-sm font-semibold transition-all duration-200 cursor-pointer;
+  color: var(--mat-sys-on-surface);
+  opacity: 0.55;
+}
+
+.link-btn-private:hover {
+  opacity: 1;
+  color: #026e00;
+}
