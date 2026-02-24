@@ -20,20 +20,20 @@ export class ProjectsComponent {
     {
       title: 'EmbedBook - Core Backend',
       description: 'Núcleo de mi PFC, un sistema de gestión de reservas. Arquitectura Hexagonal y DDD. Renderizado de vistas SSR para clientes externos y seguridad robusta.',
-      technologies: ['Java 21', 'Spring Boot 3', 'Spring Security', 'MySQL', 'Thymeleaf', 'Docker', 'Redis'],
+      technologies: ['Java 21', 'Spring Boot', 'Spring Security', 'MySQL', 'Thymeleaf', 'Docker', 'Redis', 'MVC'],
       githubUrl: 'https://github.com/PauMorillas/PFG-DAW-Monolito',
       privateDemo: true
     },
     {
       title: 'EmbedBook - Migración Laravel',
       description: 'Evolución técnica del backend de mi PFC hacia un ecosistema PHP. Implementación de patrón CQRS (Command Bus), Jobs para tareas asíncronas y Auth con Sanctum.',
-      technologies: ['PHP 8.3', 'Laravel 11', 'CQRS', 'MySQL', 'Sanctum', 'Docker', 'DDD', 'Arquitectura Hexagonal'],
+      technologies: ['PHP 8.2', 'Laravel 11', 'CQRS', 'SQL', 'Sanctum', 'Docker', 'DDD', 'Arquitectura Hexagonal'],
       githubUrl: 'https://github.com/PauMorillas/Migration-PFG-DAW-ToLaravel',
       privateDemo: true
     },
     {
       title: 'EmbedBook - Panel Gerentes',
-      description: 'SPA (Single Page Application) avanzada para la administración integral del sistema. Interfaz reactiva, Guards de seguridad e interceptores.',
+      description: 'SPA avanzada para la administración integral del sistema. Interfaz reactiva, Guards de seguridad, servicios e interceptores.',
       technologies: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNg', 'FullCalendar'],
       githubUrl: 'https://github.com/PauMorillas/PFG-DAW-ANGULARFRONT',
       liveUrl: 'https://paumorillas.github.io/PFG-DAW-ANGULARFRONT/#/'
@@ -41,21 +41,21 @@ export class ProjectsComponent {
     {
       title: 'Dashboard de Gestión de Clientes',
       description: 'Panel de administración enfocado en una arquitectura limpia y escalable. Implementa separación de lógica de negocio estricta mediante patrones MVC, Repository, Service, DTO y Facade.',
-      technologies: ['Java', 'Spring Boot', 'Patrones de Diseño', 'DTO / Facade'],
+      technologies: ['Java', 'Spring Boot', 'Patrones de Diseño', 'DTO / Facade', 'SQL'],
       githubUrl: 'https://github.com/PauMorillas/DEMO-SpringBootApp-GestionClientes',
       privateDemo: true
     },
     {
       title: 'Forum WebApp',
       description: 'Plataforma de foros desarrollada con Java 17 y Spring Boot 3.5. Incluye configuración de Spring Security para la protección de rutas y gestión de autenticación con Google (OAuth2).',
-      technologies: ['Java 17', 'Spring Boot 3.5', 'Spring Security', 'Maven', 'MySQL', 'OAuth2'],
+      technologies: ['Java 17', 'Spring Boot 3.5', 'Spring Security', 'Maven', 'SQL', 'OAuth2'],
       githubUrl: 'https://github.com/PauMorillas/Forum-WebApp',
       privateDemo: true
     },
     {
       title: 'Testimonials API REST',
       description: 'API desarrollada en Node.js para la gestión de reseñas y testimonios de usuarios. Construida bajo estándares de calidad, aplicando buenas prácticas y patrones de diseño en el backend.',
-      technologies: ['Node.js', 'API REST', 'Arquitectura Backend', 'Patrones de Diseño', 'MySQL'],
+      technologies: ['Node.js', 'API REST', 'Arquitectura Backend', 'Patrones de Diseño', 'SQL'],
       githubUrl: 'https://github.com/PauMorillas/Testimonials-API',
       privateDemo: true
 
